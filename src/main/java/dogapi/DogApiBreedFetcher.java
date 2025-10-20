@@ -50,9 +50,4 @@ public class DogApiBreedFetcher implements BreedFetcher {
             throw new BreedNotFoundException(breed);
         }
     }
-
-    public static void main(String[] args) {
-        DogApiBreedFetcher fetcher = new DogApiBreedFetcher();
-        fetcher.getSubBreeds("cat");
-    }
 }
